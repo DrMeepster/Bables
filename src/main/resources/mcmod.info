@@ -8,7 +8,7 @@
   "updateUrl": "",
   "authorList": ["DrMeepster"],
   "credits": "Azanor for making Baubles",
-  "logoFile": "",
+  "logoFile": "assets/bables/logo.png",
   "screenshots": [],
   "useDependencyInformation": true,
   "requiredMods": [Baubles, drcorester],
