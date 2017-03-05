@@ -53,26 +53,9 @@ public class EventHandler {
 	}
 	
 	@Mod.EventBusSubscriber
-	public static class amuletRelog{
-		@SubscribeEvent
-		public static void event(PlayerLoggedInEvent event){
-			EntityPlayer player = event.player;
-			System.out.println("meep");
-			ItemStack stack = BaublesApi.getBaublesHandler(player).getStackInSlot(0);
-			if((stack != null) && (stack.getItem() == BableItems.amuletSmith)){
-				((AmuletSmith)stack.getItem()).onEquipped(stack, player);
-			}else if(stack != null){
-				System.out.println(stack.getItem().getUnlocalizedName());
-			}
-		}
-	}
-	
-	@Mod.EventBusSubscriber
 	public static class craft{
 		@SubscribeEvent
 		public static void event(ItemCraftedEvent event){
-			System.out.println("BOOm!");
-			
 			if(event.crafting.getItem() == BableItems.trinketBable){
 				event.player.addStat(BablesAchieve.achieveBableCraft);
 			}else if(event.crafting.getItem() == BableItems.trinketStupid){
