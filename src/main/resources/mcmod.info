@@ -1,0 +1,16 @@
+[{
+  "modid": "bables",
+  "name": "Bables",
+  "description": "A test of Baubles.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DrMeepster"],
+  "credits": "Azanor for making Baubles",
+  "logoFile": "",
+  "screenshots": [],
+  "useDependencyInformation": true,
+  "requiredMods": [Baubles, drcorester],
+  "dependencies": [Baubles, drcorester]
+}]

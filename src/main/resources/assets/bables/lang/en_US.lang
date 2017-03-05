@@ -1,0 +1,31 @@
+#Items
+item.bables_ring_legend.name=Thar's Legendary Super Storm Ring of Epicness
+item.bables_belt_kinesis.name=Belt of Kinesis
+item.bables_amulet_smith.name=Blacksmith Amulet
+item.bables_trinket_bable.name=Bable
+item.bables_trinket_stupid.name=de bable tingy
+item.bables_powder_damp.name=Damping Powder
+item.bables_goo_undamp.name=§cUn§6da§emp§ain§bg G§9oo
+
+tooltip.cosmetic=Cosmetic
+tooltip.damped=Damped! No effect.
+
+#Death
+death.attack.thar=%1$s was unworthy!
+death.attack.smith=%1$s was anviled for not being a blacksmith.
+death.attack.wrath=%1$s incurred the wrath of DrMeepster!
+
+#Achievements
+achievement.spinKill=Spin Kill
+achievement.spinKill.desc=Kill a witch while wearing the Belt of Kinesis.
+achievement.meepWrath=Wrath of DrMeepster
+achievement.meepWrath.desc=Anger ME!
+achievement.bableCraft=The Bable
+achievement.bableCraft.desc=Craft a Bable.
+achievement.stupidCraft=The Pinnacle of Stupidity
+achievement.stupidCraft.desc=Craft de bable tingy but be warned, wearing it will cause stupidity.
+achievement.derpWitch=Derpy Witch
+achievement.derpWitch.desc=Kill a witch while wearing de bable tingy.
+
+#Potions
+effect.bables_no_move=Immovability
