@@ -6,6 +6,7 @@ item.bables_trinket_bable.name=Bable
 item.bables_trinket_stupid.name=de bable tingy
 item.bables_powder_damp.name=Damping Powder
 item.bables_goo_undamp.name=§cUn§6da§emp§ain§bg G§9oo
+item.bables_crown_fall_out_of_world.name=Crown of Falling Out of The World
 
 tooltip.cosmetic=Cosmetic
 tooltip.damped=Damped! No effect.
@@ -29,3 +30,6 @@ achievement.derpWitch.desc=Kill a witch while wearing de bable tingy.
 
 #Potions
 effect.bables_no_move=Immovability
+
+#Misc
+itemGroup.bables_tabBable=Bables
