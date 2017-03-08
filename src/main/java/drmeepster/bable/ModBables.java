@@ -49,6 +49,7 @@ public class ModBables {
 	public static boolean devItems;
 	public static String nbtTestString;
 	public static int nbtTestInt;
+	public static int tharTickDelay;
 	public static boolean badJava = false;
 
 	@EventHandler
@@ -66,6 +67,7 @@ public class ModBables {
 		devItems = config.getBoolean("allowDevItems", dev.getName(), false, "Adds in items used to test Bables.");
 		nbtTestString = config.getString("nbtTestString", dev.getName(), "beepboopimarobot", "The string that is used for the item \"item.bables_trinket_nbt_test.name\".");
 		nbtTestInt = config.getInt("nbtTestInt", dev.getName(), 101010, Integer.MIN_VALUE, Integer.MAX_VALUE, "The int that is used for the item \"item.bables_trinket_nbt_test.name\".");
+		tharTickDelay = config.getInt("tharTickDelay", Configuration.CATEGORY_GENERAL, 5, -1, Integer.MAX_VALUE, "The delay that is used for Thar's Ring when it is damped");
 		
 		config.save();
 		

@@ -43,7 +43,7 @@ public class RingLegend extends BasicBable{
 	
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player){
-		if(tick >= 5){
+		if(tick >= ModBables.tharTickDelay && ModBables.tharTickDelay != -1){
 			lightning = new EntityLightningBolt(world, (double)playerPos.getX(), (double)playerPos.getY(), (double)playerPos.getZ(), true);
 			world.spawnEntityInWorld(lightning);
 			tick = 5;
