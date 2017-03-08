@@ -13,8 +13,6 @@ public class RingLegend extends BasicBable{
 	
 	public static final String NAME = "ring_legend";
 	private int tick = 5;
-	private World world;
-	private BlockPos playerPos;
 	private EntityLightningBolt lightning;
 	
 	public RingLegend() {
@@ -32,8 +30,6 @@ public class RingLegend extends BasicBable{
 		if(!this.isDamped(itemstack)){
 			player.attackEntityFrom(ModBables.DAMAGE_THAR, Float.MAX_VALUE);
 		}
-		world = player.getEntityWorld();
-		playerPos = player.getPosition();
 	}
 	
 	@Override
@@ -43,6 +39,8 @@ public class RingLegend extends BasicBable{
 	
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player){
+		World world = player.getEntityWorld();
+		BlockPos playerPos = player.getPosition();
 		if(tick >= ModBables.tharTickDelay && ModBables.tharTickDelay != -1){
 			lightning = new EntityLightningBolt(world, (double)playerPos.getX(), (double)playerPos.getY(), (double)playerPos.getZ(), true);
 			world.spawnEntityInWorld(lightning);

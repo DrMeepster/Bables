@@ -177,6 +177,9 @@ public class BableRecipies {
 		GameRegistry.addRecipe(new NBTShapelessRecipe(list.toArray(new ItemStack[0]), Util.setNbtData(new ItemStack(BableTestItems.trinketNbtTest), tag), null));
 		
 		for(Item item : BableItems.list){
+			if(!(item instanceof BasicBable) || ((BasicBable)item).isCosmetic()){
+				continue;
+			}
 			ArrayList<ItemStack> listA = new ArrayList<>();
 			ArrayList<ItemStack> listB = new ArrayList<>();
 			
